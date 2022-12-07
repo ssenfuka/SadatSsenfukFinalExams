@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bugema University</title>
+
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.png' />
+    
+	<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=NTR' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:#090450;">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Bugema University <span>Kampala</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#mainCarousel">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">page two</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">page three</a>
+                    </li>
+                    <li>
+                        <a href="#blog">page four</a>
+                    </li>
+                   
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+    <style>
+    
+    	.navbar-default {
+    		background-color: transparent;
+    		border-color: transparent;
+    		-webkit-transition: all 0.5s ease 0s;
+  			-o-transition: all 0.5s ease 0s;
+  			transition: all 0.5s ease 0s;
+    	}
+    	
+    	.navbar-nav { 
+    		margin-top: 40px;
+    		float: right;
+    	}
+    	
+    	@media screen and (max-width: 767px) {
+    	.navbar-nav {
+    		float: none;
+    		text-align: center;
+    		background: rgba(39, 48, 78, 0.107);
+    	}
+    	}
+    	
+    	.navbar-default .navbar-brand {
+    		margin-top: 40px;
+    		font-size: 28px;
+    		font-family: 'Righteous', cursive;
+    		color: #fff;
+    		letter-spacing: 1px;
+    		-moz-transition:color .5s ease-in;
+   			-o-transition:color .5s ease-in;
+    		-webkit-transition:color .5s ease-in;
+    	}
+    	
+    	.navbar-default .navbar-brand span {
+    		color: #ffffff;
+    		-moz-transition:color .5s ease-in;
+   			-o-transition:color .5s ease-in;
+    		-webkit-transition:color .5s ease-in;
+    	}
+    	
+    	@media screen and (max-width: 400px) {
+    	.navbar-default .navbar-brand {
+    		font-size: 22px;
+    	}
+    	}
+    	
+    	.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand span:hover {
+    		color: #090450;
+    		/*color: #3D99B8;*/
+    	}
+    	
+    	.navbar-default .navbar-nav>li>a {
+    		color: #fff;
+    		font-size: 14px;
+    		font-family: 'Noto Sans', sans-serif;
+    		text-transform: uppercase;
+    		letter-spacing: 1px;
+    	}
+    	
+    	.navbar-default .navbar-nav>li>a:hover {
+    		color: #ffffff;
+    	}
+    	
+    	.navbar-default .navbar-nav>li>a:focus {
+    		color: #090450;
+    	}
+    	
+    	.navbar-default .navbar-toggle {
+    		margin-top: 40px;
+    		border: none;
+    	}
+    	
+		.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+			background: none;
+		}
+    	
+    	.navbar-default .navbar-toggle .icon-bar {
+    		height: 4px;
+    		width: 28px;
+    		background: #090450;
+		}
+    	
+    	.navbar-default.shrink {
+    		background:rgba(181, 186, 207, 0)
+		}
+		
+		.navbar-default.shrink .navbar-nav {
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		
+		.navbar-default.shrink .navbar-brand {
+			margin-top: 20px;
+		}
+		
+		.navbar-default.shrink .navbar-toggle {
+			margin-top: 25px;
+		}
+
+    
+    </style>
+
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="mainCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mainCarousel" data-slide-to="1"></li>
+            <li data-target="#mainCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+            <div class="slider_overlay"></div>
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/finalExam3.PNG');">
+                    <div class="hero">
+                        <hgroup>
+                            <h1>Bugema University<br> Main Campus</h1>
+                            <h3> Execellence in Service </h3>
+                        </hgroup>
+                        <button class="btn btn-hero btn-lg" role="button">Other Campuses</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+
+            <div class="slider_overlay"></div>
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/finalExam2.PNG');">
+                    <div class="hero">
+                        <hgroup>
+                            <h1> Kampala Campus </h1>
+                            <h3> Muganzi Awogererwa Makerere Kavule </h3>
+                        </hgroup>
+                    </div>
+                </div>
+            </div>
+            <div class="item">    
+            <div class="slider_overlay"></div>
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/FinalExam4.PNG');">
+                    <div class="hero">
+                        <hgroup>
+                            <h1>Mbale Campus</h1>
+                            <h3>Mbale Road Tirinyi</h3>
+                        </hgroup>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#mainCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#mainCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+    
+    <div id="about">
+    	<div class="container">
+    		<div class="text">
+    			<h2 style="color:#090450; text-align: center;">About Bugema</h2>
+    			<hr>
+    			<p> Bugema University is a chartered Seventh day religious based University with it's main campus like;</p>
+				
+				
+			</div>
+
+        <div class="col-md-6">
+            <!-- begin panel group -->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                
+                <!-- panel 1 -->
+                <div class="panel panel-default">
+                    <!--wrap panel heading in span to trigger image change as well as collapse -->
+                    <span class="side-tab" data-target="#tab1" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="headingOne"data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h4 class="panel-title" style="text-align:center;"> <b> Campuses </b></h4>
+                        </div>
+                    </span>
+                    
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                        <!-- Tab content goes here -->
+                         <p><b>Main Campas:</b>  Located at 32km Gayaza - Zirobwe Road <br>
+						<b>Kampala Campas:</b> Muganzi Awongererwa road Makerere Kampala<br> <b> Arua Campas:</b> Arua City
+							<br> <b>Mbale Campas:</b> Mbale City Tirinyi Road <br>
+						<b>Kasese Campus</b> Kasese Co-ordinating Center - Kasese Road </p>
+                        </div>
+                    </div>
+                </div> 
+                <!-- / panel 1 -->
+                
+                <!-- panel 2 -->
+                <div class="panel panel-default">
+                    <!--wrap panel heading in span to trigger image change as well as collapse -->
+                    <span class="side-tab" data-target="#tab2" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h4 class="panel-title collapsed" style="text-align:center;"> <b> Schools </b></h4>
+                        </div>
+                    </span>
+
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                        <!-- Tab content goes here -->
+                        <p> School of graduate studies</p> <br>
+                        <p> School of Business</p> <br>
+						<p> School of computing & Infomatics</p> <br>
+						<p> School of Education</p> <br>
+						<p> School of Health Science </p> <br>
+						<p> School of Natural Science</p> <br>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- / panel 2 -->
+                
+                <!--  panel 3 -->
+                <div class="panel panel-default">
+                    <!--wrap panel heading in span to trigger image change as well as collapse -->
+                    <span class="side-tab" data-target="#tab3" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="headingThree"  class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h4 class="panel-title" style="text-align:center;"> <b> Why I Joined Bugema</b></h4>
+                        </div>
+                    </span>
+
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                          <!-- tab content goes here -->
+						  <ol>
+							<li> Because it was the closest to my work place</li>
+							<li> Because it was near my residence</li>
+							<li> it is affordable</li>
+							<li> It is a high standard religious school</li>
+							<li> It is a chartered University</li>
+						
+						</ol>
+                          </div>
+                        </div>
+                      </div>
+            	</div>
+             </div> 
+             
+   	 		 <div class="col-md-6">
+    			<div id="carousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+					<ol class="carousel-indicators">
+			  			<li data-target="#carousel" data-slide-to="0" class="active"></li>
+			    		<li data-target="#carousel" data-slide-to="1"></li>
+			    		<li data-target="#carousel" data-slide-to="2"></li>
+			    		<li data-target="#carousel" data-slide-to="3"></li>
+			    		<li data-target="#carousel" data-slide-to="4"></li>
+					</ol>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+			    		<div class="item active">
+			    			<img src="images/uni1.PNG" alt="First slide">
+			    		</div>
+			    		<div class="item">
+			    			<img src="images/uni2.PNG" alt="Second slide">
+			    		</div>
+			    		<div class="item">
+			    			<img src="images/uni3.PNG" alt="Third slide">
+			    		</div>
+			    		<div class="item">
+			    			<img src="images/uni1.PNG" alt="Third slide">
+			    		</div>
+			    		<div class="item">
+			    			<img src="images/uni2.PNG" alt="Third slide">
+			    		</div>
+					</div>
+				</div>
+			</div>
+             
+        </div>
+    </div>
+    
+
+
+    <div id="portfolio">
+    	<div class="container">
+    		<h2 style="text-align:center;"> About CSS</h2>
+    		<p>This is short for Cascading Style Sheets. It is used on HTML codes manage the web-page 
+				layout. It basically handles colors, font type & size, background color and images, padding among others. </p>
+      	
+				<dl>
+					<dt style="font-size: 18px;"><strong> Inline CSS</strong></dt>
+					<dd>Used on a given line of an element in the body section</dd>
+					<dt><strong>Internal CSS </strong></dt>
+					<dd>Used within the style element between the head section</dd>
+					<dt><strong>External CSS </strong></dt>
+					<dd>Using a separate .CSS file  created by the programmer and linked to a given</dd>
+				  </dl>
+				<br>
+
+				
+        <!-- About Me -->
+
+  
+	<h1 style="text-align:center; color: rgb(7, 7, 73)"> Why Computer Networks and Systems Administration</h1>
+	<br>
+	<div class="row">
+	  <div class="column" style="background-color:white;">
+	  </div>
+	  <div class="column" style="background-color:white">
+		<h2 style="color: rgb(7, 7, 73);">Why Computer Networks? </h2>
+	   <ol style="font-size: 18px;">
+		  <li>Wanted to Join Bugema University</li>
+		  <li>Wanted to attain a Degree</li>
+		  <li>I had some experience working with computer network</li>
+		  <li>It's in line with employement works</li>
+		  <li> It is source of income</li>
+		  <br>
+
+	   </ol>
+	
+	  </div>
+	</div>    
+    
+    
+    
+	<div class="footer">
+  		<div class="container">
+   			<p class="text-muted">Copyright 2022 | <b> Bugema University  </b> | Designed by <b> Ssenfuka Sadat: 22SEM/BU/Exam130 - 17/BSC/BU/R/1007 </b></p>
+  		</div>
+	</div>
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/jquery.isotope.js"></script>
+    
+    <script src="js/jquery.scrollUp.min.js"></script>
+    
+    
+	<script type="text/javascript">
+	
+	$('a[href^="#"]').on('click', function(event) {
+    	var target = $(this.getAttribute('href'));
+    	if( target.length ) {
+       		event.preventDefault();
+        	$('html, body').stop().animate({
+            	scrollTop: target.offset().top
+        	}, 1000);
+    	}
+	});
+
+	</script>
+    
+    
+    <!-- Navbar Change on Scroll -->
+	<script type="text/javascript">
+		$(function(){
+ 		var shrinkHeader = 100;
+  		$(window).scroll(function() {
+    		var scroll = getCurrentScroll();
+      		if ( scroll >= shrinkHeader ) {
+           		$('.navbar-default').addClass('shrink');
+        	}
+       		else {
+            	$('.navbar-default').removeClass('shrink');
+        	}
+  		});
+		function getCurrentScroll() {
+    		return window.pageYOffset || document.documentElement.scrollTop;
+    	}
+	});
+
+	</script>    
+
+
+	<!-- Portfolio Isotope Settings -->
+	<script type="text/javascript">
+
+	$(window).load(function(){
+  
+  
+ 	 var $container = $('.portfolioContainer'),
+     	$body = $('body'),
+     	colW = 375,
+      	columns = null;
+
+  
+  	$container.isotope({
+    // disable window resizing
+    	resizable: true,
+   	 	masonry: {
+        columnWidth: colW
+    	}
+  	});
+  
+  	$(window).smartresize(function(){
+    // check if columns has changed
+    	var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+    	if ( currentColumns !== columns ) {
+      	// set new column count
+      	columns = currentColumns;
+      	// apply width to container manually, then trigger relayout
+      	$container.width( columns * colW )
+        	.isotope('reLayout');
+    	}
+    
+  	}).smartresize(); // trigger resize to set container width
+  	$('.portfolioFilter a').click(function(){
+        	$('.portfolioFilter .current').removeClass('current');
+        	$(this).addClass('current');
+ 
+        	var selector = $(this).attr('data-filter');
+        	$container.isotope({
+			
+            filter: selector,
+         });
+        	 return false;
+   	 	});
+  
+	});
+
+	</script>
+	
+	
+	<!-- Scroll To Top Settings -->
+    <script type="text/javascript">
+    
+    $(function () {
+  		$.scrollUp({
+    		scrollName: 'scrollUp', // Element ID
+    		topDistance: '300', // Distance from top before showing element (px)
+    		topSpeed: 600, // Speed back to top (ms)
+    		animation: 'fade', // Fade, slide, none
+    		animationInSpeed: 200, // Animation in speed (ms)
+    		animationOutSpeed: 200, // Animation out speed (ms)
+    		activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+    		scrollImg: true,
+  		});
+	});
+    
+    </script>
+
+	
+</body>
+
+</html>
